@@ -1,0 +1,9 @@
+---
+app:
+    news:
+        good: 
+            path: /good-news
+            message: Pi¹tek   
+        bad: 
+            path: /bad-news
+            message: COVID

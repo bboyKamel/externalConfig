@@ -1,0 +1,9 @@
+---
+app:
+    news:
+        good: 
+            path: /good-news
+            message: Dobra    
+        bad: 
+            path: /bad-news
+            message: Zlota
