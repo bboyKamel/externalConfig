@@ -3,7 +3,7 @@ app:
     news:
         good: 
             path: /good-news
-            message: Pi¹tek   
+            message: Piatek   
         bad: 
             path: /bad-news
             message: COVID
