@@ -22,7 +22,7 @@ public class GoodNewsController {
     String goodNewsPath;
     
     @GetMapping(path = "/good-news", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity goodNews(@RequestParam(value = "name", defaultValue = "World") String name) {   
+    public ResponseEntity goodNews() {   
         AnswerDTO answer = new AnswerDTO(goodNewsPath, env.getProperty("app.news.good.message"));
     
     return new ResponseEntity(answer, HttpStatus.OK);
