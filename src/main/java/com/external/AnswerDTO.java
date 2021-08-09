@@ -3,13 +3,13 @@ package com.external;
 
 import java.util.Date;
 
-public class Answer {
+public class AnswerDTO {
     
     String endpoint;
     String message;
     Date timestamp;
     
-    public Answer(String endpoint, String message) {
+    public AnswerDTO(String endpoint, String message) {
         this.endpoint = endpoint;
         this.message = message;
         this.timestamp = new Date();

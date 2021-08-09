@@ -1,7 +1,7 @@
 
 package com.external.controllers;
 
-import com.external.Answer;
+import com.external.AnswerDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -23,7 +23,7 @@ public class GoodNewsController {
     
     @GetMapping(path = "/good-news", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity goodNews(@RequestParam(value = "name", defaultValue = "World") String name) {   
-        Answer answer = new Answer(goodNewsPath, env.getProperty("app.news.good.message"));
+        AnswerDTO answer = new AnswerDTO(goodNewsPath, env.getProperty("app.news.good.message"));
     
     return new ResponseEntity(answer, HttpStatus.OK);
     }
