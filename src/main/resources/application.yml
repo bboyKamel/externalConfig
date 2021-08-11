@@ -1,4 +1,3 @@
----
 app:
     news:
         good: 
@@ -7,3 +6,14 @@ app:
         bad: 
             path: /bad-news
             message: Zlota
+            
+management:
+    server:
+        port: 8081 
+        address: 127.0.0.1
+    endpoints:
+        enabled-by-default: true
+    
+    endpoint:
+        info:
+            enabled: true

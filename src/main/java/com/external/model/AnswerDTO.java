@@ -1,5 +1,5 @@
 
-package com.external;
+package com.external.model;
 
 import java.util.Date;
 
