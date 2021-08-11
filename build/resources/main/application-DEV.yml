@@ -1,8 +1,0 @@
-app:
-    news:
-        good: 
-            path: /good-news
-            message: Piatek   
-        bad: 
-            path: /bad-news
-            message: COVID
