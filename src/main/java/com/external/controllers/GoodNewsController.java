@@ -18,7 +18,7 @@ public class GoodNewsController {
     private Environment env;
     
     @Value("${app.news.good.path}")
-    String goodNewsPath;
+    private String goodNewsPath;
     
     @GetMapping(path = "/good-news", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity goodNews() {   
