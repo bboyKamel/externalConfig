@@ -2,7 +2,9 @@
 package com.external.model;
 
 import java.util.Date;
+import lombok.Getter;
 
+@Getter
 public class AnswerDTO {
     
     private String endpoint;
@@ -14,16 +16,4 @@ public class AnswerDTO {
         this.message = message;
         this.timestamp = new Date();
     }
-
-    public String getEndpoint() {
-        return endpoint;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public Date getTimestamp() {
-        return timestamp;
-    }   
 }
