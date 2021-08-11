@@ -5,9 +5,9 @@ import java.util.Date;
 
 public class AnswerDTO {
     
-    String endpoint;
-    String message;
-    Date timestamp;
+    private String endpoint;
+    private String message;
+    private Date timestamp;
     
     public AnswerDTO(String endpoint, String message) {
         this.endpoint = endpoint;
@@ -19,26 +19,11 @@ public class AnswerDTO {
         return endpoint;
     }
 
-    public void setEndpoint(String endpoint) {
-        this.endpoint = endpoint;
-    }
-
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
     public Date getTimestamp() {
         return timestamp;
-    }
-
-    public void setTimestamp(Date timestamp) {
-        this.timestamp = timestamp;
-    }
-    
-    
-    
+    }   
 }
