@@ -1,5 +1,5 @@
 
-package com.external.model;
+package com.externalConfig.model;
 
 import java.util.Date;
 import lombok.Getter;
