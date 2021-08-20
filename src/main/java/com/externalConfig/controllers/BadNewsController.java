@@ -21,7 +21,7 @@ public class BadNewsController {
     @GetMapping(path = "/bad-news", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity badNews() throws InterruptedException {
         AnswerDTO answer = new AnswerDTO(badNewsPath, badMessage);
-        Thread.sleep(5000);
+//        Thread.sleep(5000);
     return new ResponseEntity(answer, HttpStatus.OK);
 
     }
